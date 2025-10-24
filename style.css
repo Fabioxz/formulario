@@ -1,1 +1,64 @@
-/* Add styles here */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* 1rem = 16px */
+/* 1rem = 10px */
+
+:root {
+    font-size: 62.5%;
+}
+
+#page {
+    max-width: 1200px;
+    margin-inline: auto;
+}
+
+body {
+    font-size: 1.6rem;
+    background: oklch(28.3% 0.141 291.089);
+    color: #FFF;
+}
+
+header {
+    padding-block: 2rem;
+    text-align: center;
+}
+
+fieldset {
+    padding: 1.5rem;
+
+    input {
+        display: block;
+        margin-top: .6rem;
+        padding: .5rem;
+        border-radius: 1rem;
+        border: none;
+        color: oklch(21% 0.006 285.885);
+    }
+
+    input:focus {
+        outline: 2px solid oklch(60.6% 0.25 292.717);
+    }
+
+    input::placeholder {
+        color: oklch(55.2% 0.016 285.938);
+    }
+
+    div {
+        margin-bottom: 1rem;
+    }
+
+    input[type=file] {
+        color: #FFF;
+    }
+
+    input[type=checkbox],
+    input[type=radio] {
+        display: inline-block;
+        outline: none;
+    }
+}
